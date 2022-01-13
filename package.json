@@ -17,7 +17,6 @@
   },
   "homepage": "https://github.com/dharmendranegi/esbuild#readme",
   "devDependencies": {
-    "esbuild": "^0.14.11",
     "serverless-esbuild": "^1.23.3"
   },
   "dependencies": {

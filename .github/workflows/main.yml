@@ -26,4 +26,4 @@ jobs:
 
       - name: Deploy
         if: github.ref == 'refs/heads/main'
-        run: serverless deploy --verbose   # create your secrets in github
+        run: serverless deploy --verbose
