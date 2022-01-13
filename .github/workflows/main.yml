@@ -25,5 +25,5 @@ jobs:
         run: npm install
 
       - name: Deploy
-        if: github.ref == 'refs/heads/test'
+        if: github.ref == 'refs/heads/main'
         run: serverless deploy --verbose   # create your secrets in github
