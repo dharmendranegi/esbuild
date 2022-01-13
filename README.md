@@ -36,7 +36,3 @@ package:
 plugins:
     - serverless-esbuild
 ```
-
-### Including extra files
-
-If you want to include extra files in your package than see this [Link](https://www.serverless.com/framework/docs/providers/aws/guide/packaging#patterns).
