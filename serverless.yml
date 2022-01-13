@@ -6,7 +6,6 @@ provider:
   stage: ${opt:stage, 'dev'}
   runtime: nodejs14.x
   memorySize: 256
-  timeout: 30
 
 custom:
   esbuild:
