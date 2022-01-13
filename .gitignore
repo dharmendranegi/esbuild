@@ -1,0 +1,24 @@
+# Serverless Directories
+.serverless
+
+# IDE Directories
+**/.idea
+**/.DS_Store
+**/__pycache__
+package-lock.json
+node_modules
+.DS_Store
+.vscode
+/mapping-templates1
+
+
+/InputData/
+
+.env
+
+# JS bundle
+/dist/
+/Users/
+/.dynamodb/
+/docs/
+/APIDocs/build/
