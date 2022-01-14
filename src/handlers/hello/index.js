@@ -1,4 +1,4 @@
-const uuidv4 = require("uuid4");
+const uuidv4 = require("uuidv4");
 
 exports.handler = async function (event, context) {
   console.log(`uuid - ${uuidv4}`);
