@@ -44,4 +44,4 @@ jobs:
 
       - name: Perf test
         if: github.ref == 'refs/heads/main'
-        run: locust -f test.py --no-web -c 10 -r 10 -t 1m  --print-stats
+        run: locust -f test.py --no-web -u 10 -r 10 -t 1m  --print-stats
