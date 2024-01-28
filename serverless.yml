@@ -2,10 +2,20 @@ service: sls-esbuild
 
 provider:
   name: aws
-  region: ${env:REGION, 'us-west-2'}
+  region: ${env:REGION, 'ap-south-1'}
   stage: ${opt:stage, 'dev'}
-  runtime: nodejs14.x
+  runtime: nodejs18.x
   memorySize: 256
+  iam:
+    role:
+      name: ${self:custom.base}-role
+      statements:
+      - Effect: "Deny"
+        Action:
+        - logs:CreateLogStream
+        - logs:PutLogEvents
+        Resource:
+        - "*"
 
 custom:
   esbuild:
