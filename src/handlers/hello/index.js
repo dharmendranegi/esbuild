@@ -7,7 +7,7 @@ exports.handler = async function (event, context) {
     body: JSON.stringify(
       {
         message: "Go Serverless! Your function executed successfully!",
-        input: event,
+        input: event?.body,
       },
       null,
       2
